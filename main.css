@@ -466,11 +466,11 @@ img.Slideimg {
 }
 
 .Slidetext {
-    width: 94%;
     position: absolute;
     display: inline;
     padding: 3% 3% 3% 3%;
     bottom: 1%;
+    left: 0;
 }
 
 
