@@ -3,80 +3,124 @@
     
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Portfolio of Suhwa Lee</title>
         <meta name="description" content="Portfolio of Suhwa Lee">
         <link rel = "stylesheet"
               type = "text/css"
               href = "main.css" />
-        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-        <link rel="icon" href="suhwalee-face-xs.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="suhwalee_face.png"/>
     </head>
     
     <body>
-
+        <div id="menu">
+            <ul class="menu-ul">
+                <li class="menu-list"><a href=index.html#about>ABOUT</a></li>
+                <li class="menu-list"><a href=index.html#works>WORKS</a></li>
+                <li class="menu-list"><a href=index.html#footer>CONTACT</a></li>
+            </ul>
+        </div>
         
-            <div id="header">
-            <a href="index.html"><img src=suhwalee_logo.png alt="Suhwa Lee. logo" style="width:150px;" class="logo"></a>
-                <nav>
-                    <ul>
-                        <li><a class= "navli" href="about.html">ABOUT</a></li>|
-                        <li><a class= "navli" href="whatido.html">WHAT I DO</a></li>|
-                        <li><a class= "navli" href="works.html">WORKS</a></li>|
-                        <li><a class= "navli" href="contact.html">CONTACT</a></li>
-                    </ul>
-                </nav>
+        <div class="window">
+            <div class="container col8-width" id="about">
+                <p class="hero">
+                Hi, I am Suhwa.<br>
+                I am a product designer based in Amsterdam.
+                </p>
+                <p class="body">With 6+ years of experience, I am good at User experience design with the users in my heart. I do so by understanding users well using various user research methods. To create more persuasive designs, I am learning to understand user behavior more through quantitative data, too! </p>
             </div>
-
-
-            <div id="outer">
-            <div id="contents">
-                
-                <div class=imgcontainer_center>
-                                    <img src=suhwalee_face.png style="max-width: 200px;" alt="I am Suhwa Lee.png">
-
-                </div>
-                <br><br>
-                <p class="bigtitle" style="text-align:center;">
-                    HELLO<br>
-                    I AM SUHWA<br>
-                    UX DESIGNER </p>
-                <br>
-                
-                <br>
-                <p class="title thin linespace">
-                Who is shaping seamless experiences in the intersection of services, digital products and physical world we live in. I do so by conducting in-depth user researches, by utilizing data and by listening to the various voices at the intersection of technology, business and of course, people.
-                </p>             
-                
-                <div class="footer">
-                    <div id="footer-columns">
-                        <div id="footer-column1">
-                            Portfolio of<br>Suhwa Lee
+            
+            <div class="container">
+                <img id="face" src="Assets/home/suhwalee_face.png">
+            </div>
+            
+            <div class="container">
+                <div class="project-box" id="works">
+                    <!-- row 1 -->
+                    <div class="project-row">
+                        <div class="project-column">
+                            <!-- project 01 -->
+                            <a href="design-system.html">
+                            <p class="h1 regular project-item-index">01</p>
+                            <p class="h1 compact p-zero">Design System</p>
+                            <p class="h3 light italic">Carepay Design System</p>
+                            <br>
+                            <p class="body ">The Buzzword of the design world - Design System! Learn more about my experience creating one</p>
+                            </a>
                         </div>
-                        
-                        <div id="footer-column2">
-                            suhwa.christina.lee@gmail.com<br>
-                            <a target="_blank" href="http://suhwalee.dothome.co.kr">suhwalee.com</a><br>
-                            <a target="_blank" href="https://www.linkedin.com/in/suhwalee">Linkedin@suhwalee</a><br>
-                            <a target="_blank" href="http://www.instagram.com/ssuatheowl_foodie">instagram @ssuatheowl_foodie</a>                           
-                        </div>
-                        
-                        <div id="footer-column3">
-                            <p id="copyright">Copyright &copy; 2019 Suhwa Lee. <br>
-                                All rights reserved.</p>
+                        <div class="project-column">
+                            <!-- project 02 -->
+                            <a href="digitalshop.html">
+                            <p class="h1 regular project-item-index">02</p>
+                                <p class="h1 compact p-zero">Data-driven Design</p>
+                            <p class="h3 light italic">Digitalshop</p>
+                            <br>
+                            <p class="body">From quantitative behavioral data to screens, have a glance at my data-driven decision-making process at ABN Amro</p>
+                            </a>
                         </div>
                     </div>
+                    <!-- row 2 -->
+                    <div class="project-row">
+                        <!-- project 03 -->
+                        <div class="project-column">
+                            <a href="payment-alert.html">
+                            <p class="h1 regular project-item-index">03</p>
+                            <p class="h1 compact p-zero">Users in the &hearts;</p>
+                            <p class="h3 light italic">Payment Alert</p>
+                            <br>
+                            <p class="body">To delight users with financial updates but not to intimidate, how I dealt with sensitive information</p>
+                            </a>
+                        </div>
+                        
+                        <!-- project 04 -->
+                        <div class="project-column">
+                            <a href="agent-app.html">
+                            <p class="h1 regular project-item-index">04</p>
+                            <p class="h1 compact p-zero">User Research X COVID-19</p>
+                            <p class="h3 light italic">Carepay Agent app</p>
+                            <br>
+                            <p class="body">Remote user research experience during the time of pandemic</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- row 3 -->
+                    <div class="project-row">
+                        <!-- project 05 -->
+                        <div class="project-column" style="opacity: 100%">
+                            <a href="change-mobile.html">
+                            <p class="h1 regular project-item-index">05</p>
+                            <p class="h1 compact p-zero">Tough Nut to Crack</p>
+                            <p class="h3 light italic">Change My Number</p>
+                            <br>
+                            <p class="body">A simple solution for complex problems</p>
+                            </a>
+                        </div>
+                        
+                        <!-- project 06 -->
+                        <div class="project-column">    
+                            <a href="onetime.html">
+                            <p class="h1 regular project-item-index">06</p>
+                            <p class="h1 compact p-zero">The Favorite</p>
+                            <p class="h3 light italic">Onetime™</p>
+                            <br>
+                            <p class="body">Last but not least, this simple world clock app is my favorite by far!</p>
+                            </a>
+                        </div>
+                    </div>
+                    
                 </div>
-
             </div>
         </div>
-    
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="app.js"></script>
+        
+        <div id="footer">
+            <p class="h3">Suhwa Lee</p>
+            <p class="body">suhwa.christina.lee@gmail.com</p>
+            <a href="https://www.linkedin.com/in/suhwalee/" target="_blank"><img class="logo" src="Assets/home/logo-linkedin.png"></a>
+        </div>
+            
     </body>
     
 </html>
-    
-        
