@@ -149,7 +149,13 @@ img {
     #menu {
         margin-left: 16px;
         margin-right: 16px;
-        width: 100%;
+        width: calc(100% - 32px);
+    }
+    
+    #footer {
+        margin-left: 16px;
+        margin-right: 16px;
+        width: calc(100% - 32px);
     }
     
     .menu-list {
