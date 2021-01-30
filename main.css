@@ -285,6 +285,17 @@ img {
     font-weight: 400;
 }
 
+.align-center {
+    text-align: center;
+}
+
+.regular {
+    font-weight: 300 !important;
+}
+
+.italic {
+    font-style: italic;
+}
 
 
 .h1 {
