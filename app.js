@@ -22,3 +22,13 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+
+function hamburgerMenu() {
+  var x = document.getElementById("menu");
+  if (x.className === "menu-ul") {
+    x.className += " responsive";
+  } else {
+    x.className = "menu-ul";
+  }
+}

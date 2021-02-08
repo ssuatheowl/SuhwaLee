@@ -5,11 +5,9 @@ html {
 #menu {
     position: fixed;
     top: 0px;
-    left: -48px;
     background-color: white;   
     width: calc(100% - 96px);
-    margin: 0px 48px 40px 48px;
-    padding: 0px 48px 0px 48px;
+    margin: 0px 48px 40px 48px; 
 }
 
 #footer {
@@ -37,16 +35,14 @@ a {
     color: #2b2b2b;  
 }
 
-
 img {
     width: 100%;
     margin-bottom: 80px;
 }
 
-.shadow {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+img.no-margin {
+    margin-bottom: 0px;
 }
-
 
 .window {
     display: block;
@@ -121,9 +117,8 @@ img {
     }
     
     .half-width {
-        display: block !important;;
+        display: block !important;
         width: 100% !important;
-        
     }
     
     .left {
@@ -166,7 +161,7 @@ img {
     }
     
     .menu-list {
-    padding-right: 24px !important;
+        padding-right: 24px !important;
     }
     
 }
@@ -180,27 +175,76 @@ img {
 
 
 .menu-ul {
-    padding: 0;
     list-style: none;
+    background-color: #333;
+    overflow: hidden;
 }
 
 
-.menu-list {
-    text-align: left;
-    display: inline;
-    padding: 8px 40px 8px 0px;
+
+.menu-ul a {    
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
     
+    text-decoration: none;
+    padding: 16px 40px 16px 0px;
     /*text style*/
+    letter-spacing: 0.25px;
+    color: #2b2b2b;
     font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 1em;
-    line-height: 1.5em;
-    /* identical to box height, or 150% */
+    line-height: 24px;
+}
 
-    letter-spacing: 0.25px;
 
-    color: #2b2b2b;
+.menu-ul .icon {
+    display: none;
+    padding-top: 12px !important;
+}
+
+
+@media screen and (max-width: 720px) {
+    .menu-ul {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        width: 100% !important;
+    }
+  .menu-ul a {
+    display: none;
+      padding-left: 16px !important;
+
+    }
+  .menu-ul a.icon {
+    float: right;
+    padding-right: 16px;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 720px) {
+  .menu-ul.responsive {
+      position: relative;
+      margin: 0px !important;
+      box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.2);
+      
+    }
+    
+  .menu-ul.responsive a.icon {
+    position: absolute;
+    right: 16px;
+    top: 0;
+  }
+  .menu-ul.responsive a {
+    padding: 16px 0px;
+      float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 .logo {
