@@ -459,3 +459,10 @@ img.no-margin {
     margin: 0px 0px 4px 0px;
     color: #2b2b2b;
 }
+
+
+@media screen and (max-width: 750px) {
+    .img-width {
+        width: 50%;
+    }
+}
