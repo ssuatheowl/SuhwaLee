@@ -28,6 +28,7 @@ div {
 body {
     margin: auto 0;
     display: block;
+    background-color: #FFFDF4
 }
 
 a {
@@ -61,7 +62,6 @@ img.round-corner{
     width: inherit;
     display: flex;
     flex-wrap: wrap;
-    /*background-color:darkseagreen;*/
     padding: 48px 0px 48px 0px;
 }
 
@@ -92,8 +92,13 @@ img.round-corner{
 .project-box {
 /*background-color:Chartreuse;*/
    width:32%;
-   display: inline-block;
+   display: flex;
    margin:8px 8px 0;
+   flex-flow: column;
+}
+
+.project-description {
+    flex: 2;
 }
 
 .button-secondary {
@@ -117,6 +122,23 @@ img.round-corner{
     color: #ffffff;
     opacity: 100%;
     text-decoration: none;
+}
+
+.hover-image-div {
+        position: relative;
+        display: inline-block;
+}
+
+.hover-image-div .img-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.hover-image-div:hover .img-hover {
+    display: inline;
 }
 
 /* Only mobile */
@@ -286,10 +308,8 @@ img.round-corner{
 
 
 .project-item-index {
-    border-bottom: solid 3px #EB5757;
+    border-top: solid 2px #EB5757;
     margin-right: 8px;
-    padding-bottom: 16px;
-    margin-bottom: 24px !important;
 }
 
 
@@ -377,8 +397,8 @@ img.round-corner{
     font-family: Sora, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 4em;
-    line-height: 4.5em;
+    font-size: 3em;
+    line-height: 1.25em;
     
     color: #2b2b2b;
 }
@@ -388,8 +408,8 @@ img.round-corner{
     font-family: Sora, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 3em;
-    line-height: 3.5em;
+    font-size: 2em;
+    line-height: 1.25em;
     /* identical to box height, or 120% */
     /* letter-spacing: 0.15px; */
     color: #2b2b2b;
@@ -400,8 +420,8 @@ img.round-corner{
     font-family: Sora, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 2em;
-    line-height: 2.5em;
+    font-size: 1.5em;
+    line-height: 2em;
     /* identical to box height, or 120% */
     /* letter-spacing: 0.15px; */
     color: #2b2b2b;
@@ -411,12 +431,16 @@ img.round-corner{
     line-height: normal;
 }
 
+.bold {
+    font-weight: 600 !important;
+}
+
 .regular {
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 
 .light {
-    font-weight: 300;
+    font-weight: 300 !important;
 }
 
 .italic {
@@ -427,8 +451,35 @@ img.round-corner{
     line-height: 1.25em;
 }
 
-.body {
-    /*position: absolute;*/
+.underline {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: grey;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.25em;
+}
+
+strong {
+  position: relative;
+  font-weight: inherit;
+}
+
+strong::before {
+  /* Highlight color */
+  background-color: yellow;
+  content: "";
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 80%;
+  left: -2px;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(-0.5deg);
+}
+
+
+
+.body-text {
     font-family: Sora, sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -436,17 +487,16 @@ img.round-corner{
     line-height: 1.25em;
     /* or 150% */
     letter-spacing: 0.25px;
-
-    /* Red */
     color: #2b2b2b;
     /*column-count: 1;*/
 }
 
-.body2 {
+
+.body-text2 {
     /*position: absolute;*/
     font-family: Sora, sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1em;
     line-height: 1.5em;
     /* or 150% */
