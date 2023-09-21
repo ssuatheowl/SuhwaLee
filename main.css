@@ -1,5 +1,5 @@
 html {
-  /*scroll-behavior: smooth;*/
+  scroll-behavior: smooth;
 }
 
 #menu {
@@ -21,9 +21,6 @@ a:hover{
     opacity: 0.6;
 }
 
-div {
-    margin-top: 24px;
-}
 
 body {
     margin: auto 0;
@@ -64,6 +61,15 @@ img.round-corner{
     max-width: 1440px;
     margin: auto;
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    padding: 48px 0px 48px 0px;
+    max-width: 1440px;
+    margin: auto;
+}
+
 
 .full-width {
     width: 100%;
@@ -135,7 +141,7 @@ img.round-corner{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 99;
+    /*z-index: 99;*/
 }
 
 .hover-image-div:hover .img-hover {
@@ -153,6 +159,14 @@ img.round-corner{
         width: 100%;
         display: inline-block;
     }
+
+    .flex-container {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 0px 48px 0px;
+    max-width: 1440px;
+    margin: auto;
+}
     
     .half-width {
         display: block !important;
@@ -168,14 +182,7 @@ img.round-corner{
     }
     
     .project-box {
-        width: 100%;
-        padding: 0px;
-    }
-    
-    .project-item {
         width: inherit;
-        display: block;
-        margin-bottom: 40px;
     }
     
     #face {
@@ -310,10 +317,7 @@ img.round-corner{
 
 .project-item-index {
     border-top: solid 2px #EB5757;
-    margin-right: 8px;
 }
-
-
 
 
 
