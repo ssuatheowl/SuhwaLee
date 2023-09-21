@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Suhwa Lee</title>
+        <meta name="description" content="Portfolio of Suhwa Lee">
+        <link rel = "stylesheet"
+              type = "text/css"
+              href = "main.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="favicon.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+    
+    <body>
+        <div class="menu-ul" id="menu">
+                <a href="index.html" class="active">ABOUT</a>
+                <a href="index.html">WORK</a>
+                <a href="not-work.html">NOT WORK</a>
+                <a href="#footer">CONTACT</a>
+                <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                    <img class="img no-margin" src="Assets/home/icon-menu.svg">
+            </a>
+        </div>
+    
+        <div class="window">
+            <p class="hero">Change My Number</p>
+            
+            <!-- 01 -->
+            <div class="container">
+                <div class="half-width left">
+                    <span class="index">01</span><span class="h1">Project Summary</span>
+                    <p class="h3">Contribution</p>
+                    <p class="chip">UX design</p>
+                    <p class="chip">UX writing</p>
+                    
+                </div>
+                
+                <div class="half-width right">
+                    <p class="body">One would say it should be possible to change the phone number of any user account, but it wasn't the case for Carepay. Every user who wished to change the phone number had to call Carepay's customer service, who will pass on the task to a back-end developer. While working to build a Change Phone Number feature to empower the user to change their phone number, we also ran into many "already existing number" problems due to many users using recycled SIM cards in Kenya. Our USSD system which recognizes the caller's phone number was only adding more complexity - a new user with a recycled SIM might be recognized as another existing user, and an existing user who has changed a phone cannot be recognized anymore.</p>
+                </div>
+            </div>
+            
+                        
+            <!-- 02 -->
+            <div class="container">
+                <div class="half-width left">
+                    <span class="index">02</span><span class="h1">Clear Head &amp; Think Straight</span>
+                    <p class="body">
+                    To make sure that no user is left behind, I went back to the drawing board and laid down all possible and complex scenarios.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="full-width">
+                
+                <img src="Assets/change-phone/diagram-change-mobile.png">
+            </div>
+
+            
+            <!-- 03 -->
+            <div class="container">
+                <div class="half-width left">
+                    <span class="index">03</span><span class="h1">Design for USSD</span>
+                </div>
+                <div class="half-width right">
+                    <p class="body">
+                    Although most of us are not used to USSD, it is yet a popular platform in Kenya especially to a significant portion of population that does not have a smartphone but a feature phone. It offers a light text-based interactive service that works on both smartphones and feature phones. So it was a good platform to make the service accessible to anyone with a mobile phone.<br>
+                    Since the USSD service can recognize the dialer's number, two problems arose.
+                    <br><br>
+                    1. The user was never registered but the phone number is previosuly used on our platform by someone else thus recognized (Recycled SIM card issue).
+                    <br>
+                    2. The user is registered, but changed a phone number and calling from the new number - thus we cannot recognize the user anymore.
+                    <br><br>
+                    To crack these cases, I decided to empower a new user to claim the recognized number, and a registered user to claim an existing account.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="full-width" style="margin: -8px">
+                <img src="Assets/change-phone/change-mobile-ussd.png">
+            </div>
+            
+            
+            <!-- 04 -->
+            <div class="container">
+                <div class="half-width left">
+                    <span class="index">04</span><span class="h1">Design App</span>
+                </div>
+            </div>
+            
+            <div class="full-width">
+                <img src="Assets/change-phone/change-mobile-screens-02.png">
+            </div>
+            
+            <!-- 05 -->
+            <div class="container">
+                <div class="half-width left">
+                    <span class="index">05</span><span class="h1">Plot twist!</span>
+                    <p class="body">
+                    Along the way, we learned that we could not solve everyone' problem. We encountered any scenarios and edge cases. So I decided to zoom out and identify what the actual problem was.
+                    <br><br>
+                    I created a customer journey combined with our frontend and backend processes. Among 4 registration channels, 3 channels were found out to be very error-prone, leaving a number of beneficiaries with wrong phone number and/or wrong personal data.
+                    <br>
+                    <br>
+                    </p>
+                </div>
+                
+                <div class="full-width center">
+                <img src="Assets/change-phone/customer-journey.png">
+                <p class="caption">&#x25B2; This customer journey map helped us to identify bottleneck processes and spot opportunities for improvement</p>
+                </div>
+
+                <div class="half-width center">
+                <p class="body">What are we going to do now? <br><br>We want start from adopting a phone number validation on all channels. This might be another process that will make some users to drop off. Not all stakeholders are happy with this. However, we are planning to convince them by proving how effectively we will decrease errors and ensure good data quality using this customer journey combined with data. </p>
+                </div>
+                
+            </div>
+            
+           
+            
+            
+            
+        </div>
+        
+        <div id="footer">
+            <p class="h3">Suhwa Lee</p>
+            <p class="body">suhwa.christina.lee@gmail.com</p>
+            <a href="https://www.linkedin.com/in/suhwalee/" target="_blank"><img class="logo" src="Assets/home/logo-linkedin.png"></a>
+            <a href="https://suhwalee.medium.com" target="_blank" style="padding-left: 8px"><img class="logo" src="Assets/home/logo-medium.png"></a>
+        </div>
+        
+        
+    </body>
+    
+</html>
