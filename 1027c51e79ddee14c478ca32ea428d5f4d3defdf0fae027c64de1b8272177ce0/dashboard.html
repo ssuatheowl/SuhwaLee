@@ -6,31 +6,47 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Portfolio of Suhwa Lee</title>
         <meta name="description" content="Portfolio of Suhwa Lee">
-        <link rel = "stylesheet"
-              type = "text/css"
-              href = "main.css" />
+        <link rel="stylesheet" type = "text/css" href = "/main.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="icon" href="poppy.ico"/>
+        <link rel="icon" href="/poppy.ico"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">       
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="/app.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
-        
+        <script type="text/javascript">
+            function docReady(fn) {
+                // see if DOM is already available
+                if (document.readyState === "complete" || document.readyState === "interactive") 
+                {
+                    // call on next available tick
+                    setTimeout(fn, 0);
+                } 
+                else 
+                {
+                    document.addEventListener("DOMContentLoaded", fn);
+                }
+            }    
+            
+            docReady(function() 
+            {
+                history.replaceState({}, null, "/dashboard")
+            });
+        </script>
     </head>
     
     
     
     <body>
         <div class="menu-ul" id="menu">
-                <a href="index.html#about">HOME</a>
-                <a href="index.html#work">WORK</a>
-                <a href="not-work.html">NOT WORK</a>
-                <a href="index.html#footer">CONTACT</a>
+                <a href="/index.html#about">HOME</a>
+                <a href="/index.html#work">WORK</a>
+                <a href="/not-work.html">NOT WORK</a>
+                <a href="/index.html#footer">CONTACT</a>
                 <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
-                    <img class="img no-margin" src="Assets/home/icon-menu.svg">
+                <img class="img no-margin" src="/Assets/home/icon-menu.svg">
             </a>
         </div>
         
@@ -82,7 +98,7 @@
                 <p class="body-text2">
                     a real-time dashboard to track innovation progress appeared promising. To ensure that there were indeed unmet needs that could be addressed through this dashboard, we conducted interviews with innovation managers to validate the existence of the problem.
                 </p>
-                <img class= "round-corner" src="Assets/dashboard/interview.png">
+                <img class= "round-corner" src="/Assets/dashboard/interview.png">
 
                 <p class="body-text2">
                     Despite the influx of initiatives, they lacked a comprehensive overview of the entire innovation funnel. The progress of each project was tracked manually, with statistics maintained in an Excel spreadsheet, and monthly reports laboriously generated from the spreadsheet into PDFs—a labor-intensive process.
@@ -92,10 +108,10 @@
                     Based on the learnings, we created personas representing the needs of various end-users.
                     <br><br><br><br>
                 </p>
-                <img class= "round-corner no-margin" src="Assets/dashboard/Persona-divisional-manager.jpg">
-                <img class= "round-corner no-margin" src="Assets/dashboard/Persona-regional-manager.jpg">
-                <img class= "round-corner no-margin" src="Assets/dashboard/Persona-evp.jpg">
-                <img class= "round-corner no-margin" src="Assets/dashboard/Persona-chairman.jpg">
+                <img class= "round-corner no-margin" src="/Assets/dashboard/Persona-divisional-manager.jpg">
+                <img class= "round-corner no-margin" src="/Assets/dashboard/Persona-regional-manager.jpg">
+                <img class= "round-corner no-margin" src="/Assets/dashboard/Persona-evp.jpg">
+                <img class= "round-corner no-margin" src="/Assets/dashboard/Persona-chairman.jpg">
 
                 <p class="body-text2">
                 During the research process, we discovered the following key insights:
@@ -120,15 +136,15 @@
             </div>
 
             <div class="full-width">
-                <img class= "round-corner" src="Assets/dashboard/DD-handsketches.jpg">         
-                <img class= "round-corner" src="Assets/dashboard/dd-wireframes.png">
-                <img class= "round-corner align-center" src="Assets/dashboard/wireframe-features.png">
+                <img class= "round-corner" src="/Assets/dashboard/DD-handsketches.jpg">         
+                <img class= "round-corner" src="/Assets/dashboard/dd-wireframes.png">
+                <img class= "round-corner align-center" src="/Assets/dashboard/wireframe-features.png">
             </div>
             <div class="container col8-width">
                 <p class="body-text2">
                     As an illustration, here are some examples of our design strategies and the insights gained from our user research that influenced our subsequent design strategies.
                 </p><br><br>
-                <img src="Assets/dashboard/iteration-table.png">
+                <img src="/Assets/dashboard/iteration-table.png">
             </div>
             
 
@@ -143,15 +159,15 @@
                 </p>
                 <br><br>
             </div>
-            <img class= "round-corner center half-width" src="Assets/dashboard/dd-progressBoard.jpg">
+            <img class= "round-corner center half-width" src="/Assets/dashboard/dd-progressBoard.jpg">
 
 
             <div class="container full-width align-center">
                 <p class="h1 regular align-center">
                     UI/UX DESIGN
                 </p>
-                <img class= "full-width round-corner align-center" src="Assets/dashboard/dd-design.png"><br>
-                <img class= "col8-width round-corner align-center" src="Assets/dashboard/dashboard-design.png">
+                <img class= "full-width round-corner align-center" src="/Assets/dashboard/dd-design.png"><br>
+                <img class= "col8-width round-corner align-center" src="/Assets/dashboard/dashboard-design.png">
 
             </div>
 
@@ -167,7 +183,7 @@
                     Additionally, I led a couple of user story mapping sessions to assist in forming a high-level backlog containing epics and user stories. This approach allowed us to develop a functional product that could provide tangible benefits to our intended end-users.
                 </p>
             </div>
-            <img class= "round-corner center full-width-width" src="Assets/dashboard/serviceBlueprint.jpg">
+            <img class= "round-corner center full-width-width" src="/Assets/dashboard/serviceBlueprint.jpg">
 
 
 
@@ -199,8 +215,8 @@
         <div id="footer">
             <p class="h3">Suhwa Lee</p>
             <p class="body-text">suhwa.christina.lee[at]gmail.com</p>
-            <a href="https://www.linkedin.com/in/suhwalee/" target="_blank"><img class="logo" src="Assets/home/logo-linkedin.png"></a>
-            <a href="https://suhwalee.medium.com" target="_blank" style="padding-left: 8px"><img class="logo" src="Assets/home/logo-medium.png"></a>
+            <a href="https://www.linkedin.com/in/suhwalee/" target="_blank"><img class="logo" src="/Assets/home/logo-linkedin.png"></a>
+            <a href="https://suhwalee.medium.com" target="_blank" style="padding-left: 8px"><img class="logo" src="/Assets/home/logo-medium.png"></a>
         </div>
             
     </body>

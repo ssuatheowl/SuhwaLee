@@ -6,29 +6,45 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Portfolio of Suhwa Lee</title>
         <meta name="description" content="Portfolio of Suhwa Lee">
-        <link rel = "stylesheet"
-              type = "text/css"
-              href = "../main.css" />
+        <link rel="stylesheet" type = "text/css" href = "/main.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="icon" href="poppy.ico"/>
+        <link rel="icon" href="/poppy.ico"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">       
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript" src="app.js"></script>
-        
+        <script type="text/javascript" src="/app.js"></script>
+         <script type="text/javascript">
+            function docReady(fn) {
+                // see if DOM is already available
+                if (document.readyState === "complete" || document.readyState === "interactive") 
+                {
+                    // call on next available tick
+                    setTimeout(fn, 0);
+                } 
+                else 
+                {
+                    document.addEventListener("DOMContentLoaded", fn);
+                }
+            }    
+            
+            docReady(function() 
+            {
+                history.replaceState({}, null, "/hydrogen")
+            });
+        </script>
     </head>
     
     
     
     <body>
         <div class="menu-ul" id="menu">
-                <a href="index.html">HOME</a>
-                <a href="index.html#work">WORK</a>
-                <a href="not-work.html">NOT WORK</a>
-                <a href="index.html#footer">CONTACT</a>
+                <a href="/index.html#about">HOME</a>
+                <a href="/index.html#work">WORK</a>
+                <a href="/not-work.html">NOT WORK</a>
+                <a href="/index.html#footer">CONTACT</a>
                 <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
-                    <img class="img no-margin" src="Assets/home/icon-menu.svg">
+                    <img class="img no-margin" src="/Assets/home/icon-menu.svg">
             </a>
         </div>
         
@@ -137,7 +153,7 @@
                 </p>
             </div>
             <div class="full-width">
-                <img class= "round-corner" src="Assets/hydrogen/peronas.png">
+                <img class= "round-corner" src="/Assets/hydrogen/peronas.png">
             </div>
 
 
@@ -154,7 +170,7 @@
 
             <div class="full-width">
                 <p class="h3 align-center">Output: Service Blueprint</p>
-                <img class= "round-corner" src="Assets/hydrogen/ServiceBlueprint.jpeg">
+                <img class= "round-corner" src="/Assets/hydrogen/ServiceBlueprint.jpeg">
             </div>
 
 
@@ -199,13 +215,13 @@
                     OUTCOMES
                 </p>
                 <p class="h3">PRODUCT ROADMAP</p>
-                <img class= "col8-width align-center" src="Assets/hydrogen/roadmap.png">
+                <img class= "col8-width align-center" src="/Assets/hydrogen/roadmap.png">
 
                 <p class="h3 no-margin">DESIGN DELIVERABLES - MVP</p>
                 <div class="container col8-width no-padding">
                     <p class="body-text2">UX design was delivered based on the newly agreed scope, addressing various archetypes’ needs to help them to meet their objectives.</p>
                 </div>
-                <img class= "col8-width round-corner align-center" src="Assets/hydrogen/design.png">
+                <img class= "col8-width round-corner align-center" src="/Assets/hydrogen/design.png">
             </div>
 
 
@@ -238,8 +254,8 @@
         <div id="footer">
             <p class="h3">Suhwa Lee</p>
             <p class="body-text">suhwa.christina.lee[at]gmail.com</p>
-            <a href="https://www.linkedin.com/in/suhwalee/" target="_blank"><img class="logo" src="Assets/home/logo-linkedin.png"></a>
-            <a href="https://suhwalee.medium.com" target="_blank" style="padding-left: 8px"><img class="logo" src="Assets/home/logo-medium.png"></a>
+            <a href="https://www.linkedin.com/in/suhwalee/" target="_blank"><img class="logo" src="/Assets/home/logo-linkedin.png"></a>
+            <a href="https://suhwalee.medium.com" target="_blank" style="padding-left: 8px"><img class="logo" src="/Assets/home/logo-medium.png"></a>
         </div>
             
     </body>
