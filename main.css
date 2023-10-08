@@ -54,6 +54,13 @@ img.round-corner{
     border-radius:24px;
 }
 
+.video-mask {
+    overflow: hidden;
+    max-width: 720px;
+    margin: auto;
+
+}
+
 .window {
     display: block;
     margin-left: 48px;
