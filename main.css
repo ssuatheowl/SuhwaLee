@@ -58,7 +58,10 @@ img.round-corner{
     overflow: hidden;
     max-width: 720px;
     margin: auto;
+}
 
+video {
+    border-radius: 24px;
 }
 
 .window {
