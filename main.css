@@ -186,8 +186,8 @@ video {
     font-family: Sora, sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 1em;
-    line-height: 1.25em;
+    font-size: 1rem;
+    line-height: 1.25rem;
     letter-spacing: 0.25px;
     text-decoration: none;
 }
@@ -251,6 +251,7 @@ video {
     
     .project-box {
         width: inherit;
+        margin-bottom: 24px;
     }
     
     #face {
@@ -306,7 +307,7 @@ video {
     font-family: Sora, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 24px;
 }
 
@@ -386,7 +387,7 @@ video {
 
 .project-item-index {
     border-top: solid 2px #EB5757;
-    padding-top: 0.25em;
+    padding-top: 0.25rem;
 }
 
 
@@ -425,11 +426,11 @@ video {
 
 
 .caption {
-    font-size: .85em;
+    font-size: .85rem;
     font-family: Sora, sans-serif;
     font-weight: 300;
     letter-spacing: 0.25px;
-    line-height: 1.5em;
+    line-height: 1.5rem;
     color: #909090;
     /*margin-top: -64px;*/
     /*margin-bottom: 80px;*/
@@ -453,8 +454,8 @@ video {
     font-family: Sora, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 4em;
-    line-height: 1.25em;
+    font-size: 4rem;
+    line-height: 4.5rem;
     
     color: #2b2b2b;
 }
@@ -463,8 +464,8 @@ video {
     font-family: Sora, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 3em;
-    line-height: 1.25em;
+    font-size: 3rem;
+    line-height: 3.5rem;
     
     color: #2b2b2b;
 }
@@ -474,8 +475,8 @@ video {
     font-family: Sora, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 2em;
-    line-height: 1.25em;
+    font-size: 2rem;
+    line-height: 2.5rem;
     /* identical to box height, or 120% */
     /* letter-spacing: 0.15px; */
     color: #2b2b2b;
@@ -486,8 +487,8 @@ video {
     font-family: Sora, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.5em;
-    line-height: 2em;
+    font-size: 1.5rem;
+    line-height: 2rem;
     /* identical to box height, or 120% */
     /* letter-spacing: 0.15px; */
     color: #2b2b2b;
@@ -514,7 +515,7 @@ video {
 }
 
 .compact {
-    line-height: 1.25em;
+    line-height: 1.25rem;
 }
 
 .underline {
@@ -522,7 +523,7 @@ video {
   text-decoration-style: dotted;
   text-decoration-color: grey;
   text-decoration-thickness: 2px;
-  text-underline-offset: 0.25em;
+  text-underline-offset: 0.25rem;
 }
 
 .underline-wavy {
@@ -530,7 +531,7 @@ video {
   text-decoration-style: wavy;
   text-decoration-color: #2d2d2d;
   text-decoration-thickness: 1px;
-  text-underline-offset: 0.25em;
+  text-underline-offset: 0.25rem;
 }
 
 strong {
@@ -557,8 +558,8 @@ strong::before {
     font-family: Sora, sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 1.25em;
-    line-height: 1.25em;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     /* or 150% */
     letter-spacing: 0.25px;
     color: #2b2b2b;
@@ -571,8 +572,8 @@ strong::before {
     font-family: Sora, sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: 1rem;
+    line-height: 1.5rem;
     /* or 150% */
     letter-spacing: 0.25px;
 
@@ -594,7 +595,7 @@ strong::before {
     color: #ffffff !important;
     font-style: normal;
     font-weight: 400;
-    font-size: 0.875em;
+    font-size: 0.875rem;
     letter-spacing: 0.15px;
     margin: 0px 0px 4px 0px;
     color: #2b2b2b;
