@@ -17,8 +17,12 @@ html {
 }
 
 
-a:hover{
+a:hover {
     opacity: 0.6;
+}
+
+.hover-opaque:hover {
+    opacity: 1.0;
 }
 
 
