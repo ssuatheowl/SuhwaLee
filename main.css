@@ -382,6 +382,7 @@ video {
 
 .project-item-index {
     border-top: solid 2px #EB5757;
+    padding-top: 0.25em;
 }
 
 
@@ -416,21 +417,6 @@ video {
 
 .center-content {
     justify-content: center;
-}
-
-
-.index {
-    border-bottom: solid 4px #EB5757;
-    margin-right: 16px;
-    margin-bottom: 24px;
-    color: #2b2b2b;
-    
-    display: inline-flex;
-    font-family: Sora, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3em;
-    line-height: 2em;
 }
 
 
@@ -589,26 +575,6 @@ strong::before {
     /* Red */
     color: #2b2b2b;
     /*column-count: 1;*/
-}
-
-/* Contribution items */
-
-
-.chip {
-    /*border: 1px solid #2b2b2b;*/
-    /*box-sizing: border-box;*/
-    background-color: #f9f5ff;
-    padding: 8px;
-    display: inline-block;
-    font-family: Sora, sans-serif;
-    
-    color: #a074ff !important;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.875em;
-    letter-spacing: 0.15px;
-    margin: 0px 0px 4px 0px;
-    color: #2b2b2b;
 }
 
 
