@@ -170,11 +170,16 @@ video {
 
 /* tablet breakpoint */
 @media (min-width:768px) {
-    .padded-boxes > * {
+    .padded-boxes.col3 > * {
         width:calc((100% - 4rem) / 3);
     }
 }
 
+@media (min-width:768px) {
+    .padded-boxes.col2 > * {
+        width:calc((100% - 4rem) / 2);
+    }
+}
 
 .button-secondary {
     width:fit-content;
