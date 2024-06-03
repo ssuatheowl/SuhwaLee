@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio of Suhwa Lee</title>
+        <meta name="description" content="Portfolio of Suhwa Lee">
+        <link rel="stylesheet" type = "text/css" href = "/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="/poppy.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/app.js"></script>
+         <script type="text/javascript">
+            function docReady(fn) {
+                // see if DOM is already available
+                if (document.readyState === "complete" || document.readyState === "interactive") 
+                {
+                    // call on next available tick
+                    setTimeout(fn, 0);
+                } 
+                else 
+                {
+                    document.addEventListener("DOMContentLoaded", fn);
+                }
+            }    
+            
+            docReady(function() 
+            {
+                history.replaceState({}, null, "/editor.html")
+            });
+        </script>
+    </head>
+    
+    
+    
+    <body>
+        <div class="menu-ul" id="menu">
+                <a href="/index.html">HOME</a>
+                <a href="/work.html">WORK</a>
+                <a href="/not-work.html">NOT WORK</a>
+                <a href="/index.html#footer">CONTACT</a>
+                <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                    <img class="img no-margin" src="/Assets/home/icon-menu.svg">
+            </a>
+        </div>
+        
+        <div class="window">
+            <div class="container col8-width">
+                <p class="hero no-margin">
+                    Dashboard Editor
+                </p>
+                <p class="body-text2">Creating a WYSIWYG editor enabling consultants improving their confidence to publish a dashboard.</p>
+
+                <br><br>
+
+                <p class="body-text bold">
+                    WHAT I DID
+                </p>
+
+                <p class="body-text2">
+                    • ToDo<br>
+                </p>
+            </div>
+
+
+
+            <div class="container col8-width">
+                <p class="h1 regular">
+                    SUMMARY
+                </p>
+                <p class="body-text2">
+                    This project was about building an online service for sustainability consulting. The website supported 2 types of users; customer users to submit their data and see consultants’ advice, and consultant users to analyze the customer’s input and to create a dashboard to provide guidance to their customers.
+
+                    This case study highlights a design for creating a WYSIWYG editor enabling consultants improving their confidence to publish a dashboard.
+                </p>
+            </div>
+
+
+            <div class="container col8-width">
+                <p class="h1 regular">
+                    PROBLEM<br>
+                </p>
+
+                <div class="padded-boxes col2">
+                    <section>
+                         <!-- box 1 content -->
+                        <p class="body-text bold no-margin">Needs</p>
+                        <div class="padded">
+                            We were going to have more graphs<br>
+                            <br>
+                        </div>
+                        <p class="body-text bold no-margin">UX Problems</p>
+                        <div class="padded">
+                            There were obvious UX problems - There were 4 tabs used in 1 screen.<br>
+                            <br>
+                            Consultants were not able to see any of the customer input, graphs shwoing aggregated input and create dashboard at the same time.
+                        </div>
+                    </section>
+                    <section>
+                        <p class="h1 heading">Images</p>
+                    </section>
+                </div>
+            </div>
+            
+            <div class="container col8-width">
+                <p class="h1 regular">
+                    FIRST ITERATIONS
+                </p>
+                <p class="body-text2">
+                    I created a few variations of design based on my assumptions.<br>
+                    <br>
+                    Using the design combined with assumptions, I convinced the team to conduct a user research with the users so we can deliver a better service to our users.
+                </p>
+
+                <div class="padded-boxes col2">
+                    <section>
+                         <!-- box 1 content -->
+                        <p class="body-text bold no-margin">Design A</p>
+                        <div class="padded">
+                            I assumed that consultants needed to see data for one topic at a time, and they need to see it while writing content.<br>
+                            <br>
+                        </div>
+                        <p class="body-text bold no-margin">Images</p>
+                    </section>
+                    <section>
+                         <!-- box 2 content -->
+                        <p class="body-text bold no-margin">Design B</p>
+                        <div class="padded">
+                            I assumed that the users needed to process all data & graphs first then work on all content afterwards.<br>
+                            <br>
+                        </div>
+                        <p class="body-text bold no-margin">Images</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="container col8-width">
+                <div class="padded-boxes col2">
+                    <section>
+                         <!-- box 1 content -->
+                        <p class="h1 regular">
+                        INSIGHTS FROM RESEARCH
+                        </p>
+                        <div class="body-text bold no-margin">
+                           Images
+                        </div>
+                    </section>
+                    <section>
+                         <!-- box 2 content -->
+                        <p class="body-text bold no-margin">Images</p>
+                        <div class="padded">
+                        We talked to consultants to understand their way of work better.
+
+                        The most important discovery was that the consultants used Microsoft Word to create content together. Only the final content was copied and pasted from Word to the website. Word also made it easier review all content at once.<br>
+                        <br>
+                        The website auto-save function was also distrusted by the consultants, and they were afraid to lose their progress when working on the content on the website.<br>
+                        <br>
+                        It was important to see the graphs while working on the content.<br>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="container col8-width">
+                <p class="h1 regular">
+                    FINAL DESIGN
+                </p>
+                <p class="body-text2">In the end, I created an WYSIWYG type of editor where the consultants could see what the client will see during editing. Instead of recreating Microsoft Word, we decided to facilitate the consultant’s working flow using Word.<br>
+                <br>
+                The new look of the editor not only allowed the consultants to see all the graphs but also to see what the clients would see while editing. It gave the consultants reassurance of the dashboard they were publishing. Developers were also happy because we did not have to implement Word’s functionality such as collaborative edit, or auto-save.</p><br><br>
+            </div>
+        </div>
+    
+        <div id="footer">
+            <p class="body-text bold">Suhwa Lee</p>
+            <p class="body-text2">suhwa.christina.lee[at]gmail.com</p>
+            <a href="https://www.linkedin.com/in/suhwalee/" target="_blank"><img class="logo" src="/Assets/home/logo-linkedin.png"></a>
+            <a href="https://suhwalee.medium.com" target="_blank" style="padding-left: 8px"><img class="logo" src="/Assets/home/logo-medium.png"></a>
+            <p class="caption" style="text-align: left; line-height:125%;">
+            Hope you enjoy this 100% handmade portfolio, designed and coded by me.<br>
+            And I don't collect any data without your knowledge.
+        </div>
+            
+    </body>
+    
+</html>
