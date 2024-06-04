@@ -58,6 +58,10 @@ img.round-corner{
     border-radius:24px;
 }
 
+img.vertical-align {
+    vertical-align: middle;
+}
+
 .video-mask {
     overflow: hidden;
     max-width: 720px;
